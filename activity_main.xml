@@ -1,0 +1,13 @@
+@Override
+    protected void onCreate(Bundle savedInstanceState) {
+       super.onCreate(savedInstanceState);
+       setContentView(R.layout.activity_main);
+       Button payButton = findViewById(R.id.paymentButton);
+       payButton.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = buildPaymentRequestIntent();	
+               startActivityForResult(intent, PAYMENT_REQUEST_CODE);
+           }
+       });
+    }

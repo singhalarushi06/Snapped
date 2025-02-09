@@ -1,0 +1,8 @@
+repositories {
+  mavenCentral()
+  google()
+}
+
+dependencies {
+  implementation "com.clover.sdk:clover-android-sdk:293"
+}
